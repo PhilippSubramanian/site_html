@@ -19,30 +19,29 @@
   </header>
   <main>
     {% block content %}
-    <h2 class="main__title">Выбери количество электрических приборов:</h2>
+    <h2 class="main__title">Выбери освещение:</h2>
     <ul class="list" id="list">
-      <!-- Задание №3 -->
       <li class="list__item">
-        <a href="{{lights + "/4"}}">
-          <img class="item__img" src="../static/img/battery.svg" alt="battery">
-          <span>3-5 прибора</span></a>
+        <a href={{size + "/3" }}>
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>2-4 лампочки</span></a>
+      </li>
+      <!--Задание №2 -->
+      <li class="list__item">
+        <a href={{size + "/7" }}>
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>4-6 лампочек</span></a>
       </li>
       <li class="list__item">
-        <a href="{{lights + "/5"}}">
-          <img class="item__img" src="../static/img/battery.svg" alt="battery">
-          <span>6-8 приборов</span></a>
+        <a href={{size + "/10" }}>
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>8 и более</span></a>
       </li>
       <li class="list__item">
-        <a href="{{lights + "/10"}}">
-          <img class="item__img" src="../static/img/battery.svg" alt="battery">
-          <span>10 и более</span></a>
+        <a href={{size + "/10" }}>
+          <img class="item__img" src="https://img2.freepng.ru/20180228/lgq/av1krec86.webp" alt="light">
+          <span>наща эко сборка</span></a> #вот где я изменил
       </li>
-      <li class="list__item">
-        <a href="{{lights + "/10"}}">
-          <img class="item__img" src="https://bcdn.products.pcc.eu/wp-content/uploads/2022/08/FOT2-ekologia.jpg" alt="battery">
-          <span>наша эко сборка</span></a>
-      </li>
-      <!--  -->
     </ul>
     {% endblock %}
   </main>
